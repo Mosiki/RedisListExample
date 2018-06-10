@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="off" monitorInterval="1800">
+
+    <appenders>
+        <!--这个输出控制台的配置 -->
+        <Console name="Console" target="SYSTEM_OUT" follow="true">
+            <!-- 控制台只输出level及以上级别的信息(onMatch),其他的直接拒绝(onMismatch) -->
+            <ThresholdFilter level="trace" onMatch="ACCEPT" onMismatch="DENY" />
+            <!-- 输出日志的格式 -->
+            <PatternLayout pattern="%date{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %level [%C{1}:%L] - %msg%n" />
+        </Console>
+    </appenders>
+    <loggers>
+        <!-- 减少部分debug日志 -->
+        <logger name="org.springframework" level="WARN"/>
+        <logger name="org.springframework.context" level="WARN"/>
+        <logger name="org.springframework.beans" level="WARN"/>
+
+        <Root level="INFO">
+            <appender-ref ref="Console" />
+        </Root >
+    </loggers>
+</configuration>
