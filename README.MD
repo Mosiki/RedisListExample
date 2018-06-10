@@ -1,6 +1,6 @@
 ## Java基于Redis实现排行榜
 
-详见[博客文章]()
+详见[博客文章](http://nullpointer.pw/Java实现排行榜基于Redis.html)
 
 
 **预览**
