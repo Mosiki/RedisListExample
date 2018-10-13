@@ -5,4 +5,4 @@
 注意修改 PhoneServiceImpl 中 Redis 的配置信息
 
 **预览**
-![](http://ojt4b2cr5.bkt.clouddn.com/20180610152859148695744.png)
+![](http://img12345.5-project.com/20180610152859148695744.png)
